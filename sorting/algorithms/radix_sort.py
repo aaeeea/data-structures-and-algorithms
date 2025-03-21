@@ -2,7 +2,7 @@
 # decimal numbers >= 0
 from array_filler import fill_array
 
-def counting_sort(arr,key):
+def counting_sort(arr, key):
     n = len(arr)
     counters = [0 for _ in range(10)]
 
