@@ -33,4 +33,3 @@ if(__name__ == "__main__"):
     array = fill_array() # using the input handling function from array_filler.py
     print(f"\narray: {array}")
     print(f"sorted array: {radix_sort(array)}")
-    

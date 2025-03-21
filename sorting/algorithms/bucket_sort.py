@@ -7,7 +7,7 @@ class Node:
         self.val = value
         self.next = None
 
-def insert(q, val): #inserting new nodes into a sorted linked list
+def insert(q, val): # inserting new nodes into a sorted linked list
     p, n, new = q, q.next, Node(val)
 
     while(n != None and n.val != None and n.val < new.val):
