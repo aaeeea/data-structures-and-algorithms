@@ -22,7 +22,7 @@ def counting_sort(arr, key):
 def radix_sort(arr):
     max_num = 0
     for num in arr:
-        max_num = max(max_num, num)
+        max_num = max_num if max_num > num else num
     p = 1
     arr_res = arr
     while p < max_num:
