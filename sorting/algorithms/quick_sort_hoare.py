@@ -29,7 +29,7 @@ def quick_sort(arr, start, end):
         quick_sort(arr, pivot+1, end)
 
 
-# run test code only when script is executed directly
+# run test code only when script is executed directly (not imported)
 if __name__ == "__main__":
     array = fill_array()
     print(f"\narray: {array}")
