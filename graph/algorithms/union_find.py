@@ -14,11 +14,9 @@ class Union:
 
         if x == y:
             return
-
         if self.rank[x] > self.rank[y]:
             self.parent[x] = y
-        elif self.rank[x] < self.rank[y]:
-            self.parent[y] = x
         else:
             self.parent[y] = x
-            self.rank[x] += 1
+            if self.rank[x] == self.rank[y]:
+                self.rank[x] += 1
